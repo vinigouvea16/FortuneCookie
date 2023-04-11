@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Cookie</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <main>
+
+    <div class="screen1">
+      <h1>Ask the Fortune Cookie</h1>
+      <p>Crack open your cookie</p>      
+   
+
+        <img onclick="toggleScreen(), changeh3()"
+        id="fortuneCookie"
+        src="assets/fortune-cookie.svg" alt="intact fortune cookie" class="shake-image">     
+      </a>
+    </div>
+
+    <div class="screen2 hide">
+      <h2>Here's your today's fortune:</h2>
+        <h3 id="heading"
+        >Anxiety wont' help your problems</h3>
+        <img id ="fortune"
+        src="assets/opened-cookie.svg" alt="opened fortune cookie">
+      <button onclick="toggleScreen()"
+       id="btnReset">Crack anoter one open</button>
+    </div>
+
+  </main>
+ <script src="./main.js"></script>
+</body>
+</html>
